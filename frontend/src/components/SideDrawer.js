@@ -32,6 +32,10 @@ function SideDrawer({ show, click }) {
         <li>
           <Link to="/">Shop</Link>
         </li>
+
+        <li>
+          <Link to="/items">Add Item</Link>
+        </li>
       </ul>
     </div>
   );

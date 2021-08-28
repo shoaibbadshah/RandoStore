@@ -47,3 +47,17 @@ export const getProductDetailsReducer = (state = { product: {} }, action) => {
       return state;
   }
 };
+
+// add Item Reducer
+
+export const addItemReducer = (state = { product: {} }, action) => {
+  switch (action.type) {
+    case actionTypes.ADD_ITEM:
+      return {
+        ...state,
+        loading: false,
+      };
+    default:
+      return state;
+  }
+};
